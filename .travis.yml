@@ -2,6 +2,8 @@ language: python
 python:
 - nightly
 
+install: true
+
 script:
 - python3 --version
 - printf \\e[31mred\\e[39m
