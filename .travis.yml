@@ -7,6 +7,7 @@ script:
 - printf \\033[31mred\\033[39m
 - printf \\x1b[31mred\\x1b[39m
 - python3 -c "print('\x1b[31mred\x1b[39m')"
+- printf \\x1b[7mreverse video\\x1b[27m
 - python3 -c "print('\x1b[7mreverse video\x1b[27m')"
 - python3 -c "print('\x1b[A')"
 - python3 -c "print('\x1b[B')"
