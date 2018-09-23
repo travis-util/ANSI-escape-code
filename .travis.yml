@@ -1,9 +1,8 @@
 language: python
-# python:
-# - "3.6"
+python:
+- nightly
 
 script:
-- python --version
 - python3 --version
 - printf \\e[31mred\\e[39m
 - printf \\033[31mred\\033[39m
