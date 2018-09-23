@@ -7,13 +7,14 @@ script:
 - printf \\e[31mred\\e[39m
 - printf \\033[31mred\\033[39m
 - printf \\x1b[31mred\\x1b[39m
-- python3 -c "print('\x1b[31mred\x1b[39m')"
-- python3 -c "print('\N{CSI}31mred\N{CSI}39m')"
+- python -c "print('\x1b[31mred\x1b[39m')"
+- python -c "print('\N{CSI}31mred\N{CSI}39m')"
+- python -c "print('\N{GREEK CAPITAL LETTER DELTA}')"
 - printf \\x1b[7mreverse video\\x1b[27m
-- python3 -c "print('\x1b[7mreverse video\x1b[27m')"
-- python3 -c "print('\x1b[A')" # cursor up
-- python3 -c "print('\x1b[B')" # cursor down
-- python3 -c "print('\x1b[C')" # cursor forward
-- python3 -c "print('\x1b[D')" # cursor backward
-- python3 -c "print('\x1b[A')"
-- python3 -c "print('\x1b[B')"
+- python -c "print('\x1b[7mreverse video\x1b[27m')"
+- python -c "print('\x1b[A')" # cursor up
+- python -c "print('\x1b[B')" # cursor down
+- python -c "print('\x1b[C')" # cursor forward
+- python -c "print('\x1b[D')" # cursor backward
+- python -c "print('\x1b[A')"
+- python -c "print('\x1b[B')"
