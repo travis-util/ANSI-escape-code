@@ -23,4 +23,5 @@ script:
 - python -c "print('\x1b[D')" # cursor backward
 - python -c "print('\x1b[A')"
 - python -c "print('\x1b[B')"
+- echo Better try the next one in a regular terminal.
 - python -c "print('...\nX\x1b[AY\x1b[BZ')"
