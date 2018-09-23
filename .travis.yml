@@ -11,6 +11,9 @@ script:
 - printf \\x1b[31mred\\x1b[39m
 - python -c "print('\x1b[31mred\x1b[39m')"
 - python -c "print('\N{CSI}31mred\N{CSI}39m')"
+- python -c "print('\x1b[31mred\x1b[39m'.encode('ascii', 'namereplace'))"
+- python -c "print('\N{CSI}'.encode('ascii', 'namereplace'))"
+- python -c "print('\N{CSI}'.encode('utf-8'))"
 - python -c "print('\N{GREEK CAPITAL LETTER DELTA}')"
 - printf \\x1b[7mreverse video\\x1b[27m
 - python -c "print('\x1b[7mreverse video\x1b[27m')"
