@@ -14,3 +14,4 @@ script:
 - python3 -c "print('\x1b[B')"
 - python3 -c "print('\x1b[7m')"
 - python3 -c "print('\x1b[27m')"
+- python3 -c "print('\x1b[31mred\x1b[39m')"
