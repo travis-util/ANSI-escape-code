@@ -3,9 +3,9 @@ language: python
 # - "3.6"
 
 script:
-# - printf \\033c
-# - printf \\ec
-# printf \\x1bc
+- printf \\e[31mred\\e[39m
+- printf \\033[31mred\\033[39m
+- printf \\x1b[31mred\\x1b[39m
 - python3 -c "print('\x1b[31mred\x1b[39m')"
 - python3 -c "print('\x1b[A')"
 - python3 -c "print('\x1b[B')"
