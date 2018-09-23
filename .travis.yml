@@ -3,10 +3,13 @@ language: python
 # - "3.6"
 
 script:
+- python --version
+- python3 --version
 - printf \\e[31mred\\e[39m
 - printf \\033[31mred\\033[39m
 - printf \\x1b[31mred\\x1b[39m
 - python3 -c "print('\x1b[31mred\x1b[39m')"
+- python3 -c "print('\N{CSI}31mred\N{CSI}39m')"
 - printf \\x1b[7mreverse video\\x1b[27m
 - python3 -c "print('\x1b[7mreverse video\x1b[27m')"
 - python3 -c "print('\x1b[A')" # cursor up
